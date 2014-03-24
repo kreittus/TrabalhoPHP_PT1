@@ -1,5 +1,5 @@
 <? 
-	class Pais{
+	public class Pais{
 		private $ISO;
 		private $nome;
 		private $populacao;
@@ -51,8 +51,11 @@
 			return false
 		}
 		
-		public function VerificaFront(Pais $p1,$ISO){
-			
+		public function VerificaFront(Pais $p1){
+			if ($p1->Pfronteira != NULL ){
+				return true			
+			}
+			return false;
 		}
 		
 		
